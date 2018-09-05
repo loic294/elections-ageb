@@ -1,0 +1,195 @@
+@import "font-awesome.min.css";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+* div {
+  box-sizing: border-box;
+}
+.fullpage {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.fullpage .absolute {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.fullpage .social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  padding: 10px 10px;
+  z-index: 10;
+}
+.fullpage .social a {
+  color: #000;
+}
+.fullpage .social a i {
+  margin: 0 4px;
+}
+.fullpage header {
+  text-align: center;
+}
+.fullpage header h1 {
+  font-size: 72px;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+@media screen and (max-width: 769px) {
+  .fullpage header h1 {
+    font-size: 48px;
+  }
+}
+.fullpage header .subtitle {
+  font-size: 52px;
+  vertical-align: middle;
+  font-weight: 300;
+}
+.fullpage header .subtitle .diviseur {
+  height: 48px;
+  width: 2px;
+  background-color: #000000;
+  display: inline-block;
+}
+.fullpage header .subtitle img {
+  max-height: 48px;
+}
+.fullpage .center-align-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 769px) {
+  .fullpage .center-align-container {
+    display: block;
+  }
+}
+.fullpage .center-align-container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+.fullpage .img-container,
+.fullpage .text-container {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 769px) {
+  .fullpage .img-container,
+  .fullpage .text-container {
+    width: 100%;
+    position: relative;
+  }
+}
+.fullpage .img-container.right,
+.fullpage .text-container.right {
+  left: 50%;
+}
+@media screen and (max-width: 769px) {
+  .fullpage .img-container.right,
+  .fullpage .text-container.right {
+    left: 0;
+  }
+}
+.fullpage .img-container .text-container-padding,
+.fullpage .text-container .text-container-padding {
+  padding: 60px 80px;
+}
+@media screen and (max-width: 769px) {
+  .fullpage .img-container .text-container-padding,
+  .fullpage .text-container .text-container-padding {
+    padding: 60px 30px;
+  }
+}
+.fullpage .img-container {
+  background-color: #333;
+  background-size: cover;
+  background-position: center bottom;
+}
+@media screen and (max-width: 769px) {
+  .fullpage .img-container {
+    width: 100%;
+    position: relative;
+    min-height: 90vh;
+  }
+}
+.fullpage .text-container h2.nom {
+  font-size: 36px;
+  margin: 0;
+}
+.fullpage .text-container h3.role {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 40px 0;
+}
+.fullpage .text-container h4 {
+  margin: 30px 0 0;
+}
+.fullpage .text-container p {
+  margin: 5px 0 10px 0;
+}
+.lba {
+  background-color: #000;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  padding: 60px 80px;
+  font-weight: 100;
+}
+@media screen and (max-width: 769px) {
+  .lba {
+    font-size: 24px;
+    padding: 60px 20px;
+  }
+}
+.lba a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.lba a span {
+  border-bottom: 1px dashed;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 60px 80px;
+  font-weight: 100;
+}
+footer .right {
+  float: right;
+  position: relative;
+}
+@media screen and (max-width: 769px) {
+  footer .right {
+    float: none;
+    margin: 10px 0 0;
+  }
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+footer a span {
+  border-bottom: 1px dashed;
+}
+.invisible {
+  visibility: hidden;
+}
